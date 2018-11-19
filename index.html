@@ -1,0 +1,34 @@
+<!-- Guess what letter I'm thinking of
+Wins: (# of times the user has guessed the letter correctly)
+Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+Guesses Left: (# of guesses left. This will update)
+Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
+When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins). -->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Psychic Game</title>
+</head>
+<body>
+  	<div class="jumbotron jumbotron-fluid"style="background-color:black">
+        <div class="container">
+          <img src="assets/images/psychic.jpg" class="img-fluid" alt="psychic" width=100%>
+        </div>
+        <div class="mx-auto" style="width: 330px; background-color: #9f01d3; padding: 20px">
+          <div id="game" style="font-family:Verdana, Geneva, Tahoma, sans-serif ">
+            <h1 class="text-center"> The Psychic Game </h1>
+            <p class="font-weight-bold text-center">Guess what letter I'm thinking of!</p>
+            <p class="font-italic">Wins:</p>
+            <p class="font-italic">Losses:</p>
+            <p class="font-italic">Guesses Left:</p>
+            <p class="font-italic">Your Guesses so far:</p>
+          </div>
+        </div>
+    </div>    
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
